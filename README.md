@@ -15,9 +15,6 @@ This repository contains a comprehensive dataset for Hebrew coreference resoluti
 
 ### Overall Dataset Composition
 - **Total Documents**: 351 (301 train, 26 dev, 24 test)
-- **Original Dataset**: 354 documents (3 excluded during final split)
-- **Excluded Documents**: 160_1, 221_3, 221_2
-- **Missing Base Documents**: 2, 26
 
 ### Text Statistics
 - **Total Sentences**: 6,151
@@ -26,32 +23,6 @@ This repository contains a comprehensive dataset for Hebrew coreference resoluti
 - **Average Tokens per Document**: 455.77
 - **Median Sentences per Document**: 16.0
 - **Median Tokens per Document**: 386.0
-
-### Split-wise Breakdown
-
-#### Training Set (301 documents)
-- **Sentences**: 5,236
-- **Tokens**: 137,333
-- **Mentions**: 16,907
-- **Average Sentences per Document**: 17.40
-- **Average Tokens per Document**: 456.26
-- **Average Mentions per Document**: 56.17
-
-#### Development Set (26 documents)
-- **Sentences**: 915
-- **Tokens**: 22,642
-- **Mentions**: 1,181
-- **Average Sentences per Document**: 35.19
-- **Average Tokens per Document**: 871.62
-- **Average Mentions per Document**: 45.42
-
-#### Test Set (24 documents)
-- **Sentences**: 0
-- **Tokens**: 0
-- **Mentions**: 1,395
-- **Average Sentences per Document**: 0.0
-- **Average Tokens per Document**: 0.0
-- **Average Mentions per Document**: 58.13
 
 ## 🏷️ Mention Statistics
 
@@ -88,21 +59,12 @@ This repository contains a comprehensive dataset for Hebrew coreference resoluti
 ## 🤝 Agreement Analysis
 
 ### Coreference Agreement Scores
-- **Round 1**: CoNLL Score: 0.518, Mention Score: 0.628
-- **Round 2**: CoNLL Score: 0.677, Mention Score: 0.754
-- **Round 3**: CoNLL Score: 0.677, Mention Score: 0.762
 - **Final Overall**: CoNLL Score: 0.811, Mention Score: 0.850
-
-### Agreement Improvement
-- **CoNLL Score Improvement**: 29.3% (from 0.518 to 0.811)
-- **Mention Score Improvement**: 22.2% (from 0.628 to 0.850)
-- **Overall Agreement**: 83.0%
 
 ### Final Agreement Scores
 - **Coreference Agreement**: 81.1%
 - **Mention Agreement**: 85.0%
-- **Overall Agreement**: 83.0%
-
+- 
 ## 📁 Repository Structure
 
 ```
@@ -140,7 +102,7 @@ hebrew_coreference_data/
 - **Mention annotators** have been anonymized as `annotator_01` through `annotator_08`
 - **Coreference pairwise files** have been flattened and anonymized
 - All `.conllu` files moved from subfolders to `annotation/coref_pairwise/`
-- Annotator names removed from filenames (e.g., Hadar → _1, _2, etc.)
+- Annotator names removed from filenames (e.g., John → _1, _2, etc.)
 - Redundant `conllu_out_annotation` subfolder removed
 
 ## 📊 Statistical Analysis Tools
