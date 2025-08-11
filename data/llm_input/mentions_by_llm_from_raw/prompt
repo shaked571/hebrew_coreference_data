@@ -1,0 +1,11 @@
+Annotate all entity mentions in the following text for a coreference clusters. Use Markdown tags to indicate a mention in the output, with the following format [mention](#) e.g.
+[הם](#) הלכו ל[בית של [אנחנו]](#)(#)
+### If needed tokenized words in order to introduce the clitics e.g.
+ביתנו -> בית_ _של_ _אנחנו
+ביתך -> בית_ _של_ _אתה
+
+### Allow nested mentions
+### Mark both nested mentions and also inner nested mentions and every noun phrase which can be candidate
+### Mark all spans as if it is Ontonotes 5.0 coreference dataset
+### It is very important to keep the text exactly as it was except the mention Markdown
+###In the MarkDown [mention](#), '#' is the exact symbol, NOT A Number
