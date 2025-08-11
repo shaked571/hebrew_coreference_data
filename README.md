@@ -9,3 +9,8 @@ Contents:
 
 Anonymization:
 - Mention annotators have been anonymized as annotator_01..annotator_08.
+
+Coref pairwise files flattened and anonymized:
+- All .conllu files moved from subfolders to annotation/coref_pairwise/
+- Annotator names removed from filenames (e.g., Hadar -> _1, _2, etc.)
+- Redundant conllu_out_annotation subfolder removed
